@@ -1,0 +1,11 @@
+dialog.mrcube.greeting="Salutations ! Mon nom est M. Cube et je vous accorde trois souhaits . Que voudriez-vous souhaiter de plus?"
+dialog.mrcube.response.wish1="Je tiens pour un million de dollars"
+dialog.mrcube.response.wish2="Je tiens pour un popsicle qui ne sera jamais fondre !"
+dialog.mrcube.response.wish3="Je ne veux pas de vouloir pour rien . Je suis assez content de la façon dont je suis ."
+dialog.mrcube.response.boring="Ce est tout le souhait ennuyeux jeune gars . Y at-il rien d'autre que vous aimeriez mieux que d'avoir 1 million de dollars ?"
+dialog.mrcube.response.Yes="Tout ce que je veux, ce est le million de dollars . Give it up !"
+dialog.mrcube.popsiclemagic="Eh bien ce est une nouvelle . Je ne ai pas effectué un tel miracle avant . Mon mysticisme et énergies magiques seront poussés à leurs limites avec ce souhait . Maintenant : toucher mes orteils comme vous l'entendez !"
+dialog.mrcube.response.Okay="Bien !"
+dialog.mrcube.response.ForgetIt="Oublie ! Je ne veux rien de vous ..."
+dialog.mrcube.response.failed="Merci pour l'enfant orteil chatouillement . Je ne peux pas réellement exaucer les vœux mais je étais aussi des démangeaisons et ne ai pas de bras . Au Revoir. ""
+dialog.mrcube.response.sadness=Laissez dans la douleur .
