@@ -56,7 +56,12 @@
     <Compile Include="Assets\Scripts\DialogTree\Util\DialogNode.cs" />
     <Compile Include="Assets\Scripts\DialogTree\Util\DialogResponse.cs" />
     <Compile Include="Assets\Scripts\DialogTree\Util\DialogResponses.cs" />
+    <Compile Include="Assets\Scripts\Localization\Lang.cs" />
+    <Compile Include="Assets\Scripts\Localization\LocalizationController.cs" />
+    <Compile Include="Assets\Scripts\Localization\LocalizedText.cs" />
+    <Compile Include="Assets\Scripts\Localization\Messages.cs" />
     <Compile Include="Assets\Scripts\OpenDialog.cs" />
+    <Compile Include="Assets\Scripts\SwitchLanguage.cs" />
     <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2013\UnityVS.CSharp.targets" />
