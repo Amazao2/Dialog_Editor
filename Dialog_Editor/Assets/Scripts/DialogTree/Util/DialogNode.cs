@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Text;
 using UnityEditor;
+using UnityEngine;
 
 [System.Serializable]
-public class DialogNode
+public class DialogNode : MonoBehaviour
 {
     // what will the NPC say?
     public string NPCDialog;

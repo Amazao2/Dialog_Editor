@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using UnityEngine;
+using Assets.Scripts.Localization;
 
 [System.Serializable]
-public class DialogResponse
+public class DialogResponse : MonoBehaviour
 {
     public string response;
     public DialogNode nextNode = null;

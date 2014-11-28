@@ -10,7 +10,7 @@ using UnityEngine;
  * 
  */
 [System.Serializable]
-public class DialogResponses
+public class DialogResponses : MonoBehaviour
 {
     public DialogResponse responseOne = null;
     public DialogResponse responseTwo = null;
