@@ -52,7 +52,7 @@ public class LocalizedTextEditor : Editor {
         
     }
 
-    private void addVariableToDefaultLanguageFile(LocalizationController controller, Lang defaultLanguage, string variableName, string variableValue)
+    public static void addVariableToDefaultLanguageFile(LocalizationController controller, Lang defaultLanguage, string variableName, string variableValue)
     {
         var path = controller.absoluteMessagesPath + "/messages." + defaultLanguage.code;
         var line = Environment.NewLine + variableName + "=" + variableValue;

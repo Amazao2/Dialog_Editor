@@ -6,16 +6,22 @@ using UnityEngine;
 [System.Serializable]
 public class DialogNode : MonoBehaviour
 {
-    // what will the NPC say?
-    public string NPCDialog;
+    public LocalizationController localizationController;
+    // what variable in the messages file corresponds to what the NPC will say?
+    public string NPCDialogVariable;
 
     // optional player choices
     public DialogResponses responses;
 
     public DialogNode(string npcDialog, DialogResponses playerResponses)
     {
-        NPCDialog = npcDialog;
+        NPCDialogVariable = npcDialog;
         responses = playerResponses;
+    }
+
+    public string getNPCDialog()
+    {
+        return localizationController.get(NPCDialogVariable);
     }
 
     public int numberOfResponses(){return responses.numberOfResponses;}

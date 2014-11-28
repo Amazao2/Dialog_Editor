@@ -1,0 +1,12 @@
+
+dialog.mrcube.greeting="Greetings! My name is Mr. Cube and I will grant you three wishes. What would you like to wish for?"
+dialog.mrcube.response.wish1="I wish for a million dollars"
+dialog.mrcube.response.wish2="I wish for a popsicle that will never melt!"
+dialog.mrcube.response.wish3="I don't want to wish for anything. I'm pretty happy how I am."
+dialog.mrcube.response.boring="That is quite the boring wish young fella. Is there nothing else you would like better than to have 1 million dollars?"
+dialog.mrcube.response.Yes="All I want is the million dollars. Give it up!"
+dialog.mrcube.popsiclemagic="Well that is new one. I haven't performed such a miracle before. My mysticism and magical energies will be pushed to their limits with this wish. Now: touch my toes like you mean it!"
+dialog.mrcube.response.Okay="Okay!"
+dialog.mrcube.response.ForgetIt="Forget it! I don't want anything from you..."
+dialog.mrcube.response.failed="Thanks for the toe tickle kid. I can't actually grant wishes but I was also itchy and don't have any arms. Goodbye."
+dialog.mrcube.response.sadness=Leave in Sorrow.

@@ -8,11 +8,20 @@ using Assets.Scripts.Localization;
 [System.Serializable]
 public class DialogResponse : MonoBehaviour
 {
-    public string response;
+    public LocalizationController localizationController;
+    public string responseVariable; // the variable that will be found in the messages file
     public DialogNode nextNode = null;
 
-    public DialogResponse(string playerResponse, DialogNode nextDialogNode) { response = playerResponse; nextNode = nextDialogNode; }
-    public DialogResponse(string playerResponse) { response = playerResponse; }
+    public string getResponse()
+    {
+        if (responseVariable == null || responseVariable == "")
+            return null;
+        else
+            return localizationController.get(responseVariable);
+    }
+
+    public DialogResponse(string playerResponseVar, DialogNode nextDialogNode) { responseVariable = playerResponseVar; nextNode = nextDialogNode; }
+    public DialogResponse(string playerResponseVar) { responseVariable = playerResponseVar; }
 
     public bool hasNextNode() { if (nextNode != null) return true; else return false; }
 

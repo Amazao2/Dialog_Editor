@@ -54,9 +54,9 @@ public class DialogTreeManager : MonoBehaviour {
 
     private void ContinueIfMoreNodes(DialogNode next)
     {
-        if (next != null && next.NPCDialog != "" && next.responses.responseOne.response != "")
+        if (next != null && next.getNPCDialog() != "" && next.responses.responseOne.getResponse() != "")
         {
-            currentNode = currentNode.responses.responseOne.nextNode;
+            currentNode = next;
             SetDialogText(currentNode);
         }
         else
@@ -78,20 +78,20 @@ public class DialogTreeManager : MonoBehaviour {
 
         EnableAllText(); // ensure all the text boxes will be seen
 
-        NPCText.text = dialogTree.NPCDialog;
-        PlayerTextOne.text = responses.responseOne.response;
+        NPCText.text = dialogTree.getNPCDialog();
+        PlayerTextOne.text = responses.responseOne.getResponse();
 
         // the next two responses may not exist
         if( responses.responseTwo != null )
         {
-            PlayerTextTwo.text = responses.responseTwo.response;
+            PlayerTextTwo.text = responses.responseTwo.getResponse();
         }
         else
             PlayerTextTwo.enabled = false;
 
         if (responses.responseThree != null)
         {
-            PlayerTextThree.text = responses.responseThree.response;
+            PlayerTextThree.text = responses.responseThree.getResponse();
         }
         else
             PlayerTextThree.enabled = false;
