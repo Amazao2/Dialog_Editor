@@ -17,7 +17,7 @@ public class DialogTreeManager : MonoBehaviour {
     public Text PlayerTextThree;
     public Button PlayerButtonThree;
 
-    private DialogNode root;
+    private DialogNode currentNode;
 
 	// Use this for initialization
 	void Start () {
@@ -27,22 +27,44 @@ public class DialogTreeManager : MonoBehaviour {
         // listen to the buttons supplied
         RegisterButtonListeners();
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 
-    public void ShowDialogScreen(DialogNode dialogTree) { 
+    public void ShowDialogScreen(DialogNode dialogTree) {
+        currentNode = dialogTree; // this is the root
         dialogScreen.enabled = true;
 
         SetDialogText(dialogTree);
     }
     void HideDialogScreen() { dialogScreen.enabled = false; }
 
-    public void SelectOptionOne() { }
-    public void SelectOptionTwo() { }
-    public void SelectOptionThree() { }
+    public void SelectOptionOne() {
+        DialogNode next = currentNode.responses.responseOne.nextNode;
+
+        ContinueIfMoreNodes(next);
+    }
+    public void SelectOptionTwo() {
+        DialogNode next = currentNode.responses.responseTwo.nextNode;
+
+        ContinueIfMoreNodes(next);
+    }
+    public void SelectOptionThree() {
+        DialogNode next = currentNode.responses.responseThree.nextNode;
+
+        ContinueIfMoreNodes(next);
+    }
+
+    private void ContinueIfMoreNodes(DialogNode next)
+    {
+        if (next != null && next.NPCDialog != "" && next.responses.responseOne.response != "")
+        {
+            currentNode = currentNode.responses.responseOne.nextNode;
+            SetDialogText(currentNode);
+        }
+        else
+        {
+            // dialog tree has been completed, close the interface
+            HideDialogScreen();
+        }
+    }
 
     private void EnableAllText()
     {

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using UnityEngine;
 
 /**  Contains between 1 and 3 response strings selectable by the character
  * 
