@@ -8,7 +8,8 @@ using System.Text;
  *      - watch out for nasty null exceptions
  * 
  */
-class DialogResponses
+[System.Serializable]
+public class DialogResponses
 {
     public DialogResponse responseOne = null;
     public DialogResponse responseTwo = null;

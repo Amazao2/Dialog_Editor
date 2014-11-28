@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-class DialogResponse
+[System.Serializable]
+public class DialogResponse
 {
     public string response;
     public DialogNode nextNode = null;

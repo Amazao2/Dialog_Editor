@@ -2,8 +2,8 @@
 using System.Text;
 using UnityEditor;
 
-
-class DialogNode
+[System.Serializable]
+public class DialogNode
 {
     // what will the NPC say?
     public string NPCDialog;
